@@ -1,6 +1,7 @@
-body {
-	font-family: 'Montserrat', sans-serif;
-	color: white;
+/* SECTION GLOBAL */
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 * {
@@ -8,18 +9,21 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+/* !SECTION GLOBAL END */
 
-header {
-	background-image: url('./img/Hero.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-bottom: 300px;
-	position: relative;
+/* SECTION HEADER */
+header{
+  background-image: url('./img/Hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 300px;
+  position: relative;
 }
 
-header .container {
-	position: relative;
-	z-index: 100;
+header .container{
+  position: relative;
+  z-index: 2;
 }
 
 nav {
@@ -77,18 +81,58 @@ header .tagline .cta a {
 	text-shadow: 0 4px 5px rgba(0, 0, 0, .15);
 }
 
-header::after {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	background: linear-gradient(to top, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 0));
-	z-index: 1;
+header::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 100%), rgba(0, 0, 0, 0));
+  z-index: 1;
 }
-/* footer */
+/* !SECTION HEADER END */
+
+/* SECTION ABOUT */
+#about{
+  /* padding: 50px 0; */
+  color: black;
+}
+
+#about .container{
+  margin: auto;
+  width: 80%;
+}
+
+/* SECTION ABOUT-1 */
+.about-1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-1 .description{
+  width: 40%;
+}
+
+.about-1 .description p{
+  margin-top: 10px;
+}
+
+/* SECTION ABOUT-2 */
+.about-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-2 .description{
+  width: 35%;
+  text-align: right;
+}
+
+  /* footer */
 .footer {
 	width: 100%;
 	background-color: #222831;
